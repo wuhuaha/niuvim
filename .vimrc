@@ -112,7 +112,7 @@ Plug 'chxuan/prepare-code'                     " 新建文件时生成预定义�
 Plug 'chxuan/vim-buffer'                       " vim缓存
 Plug 'chxuan/vimplus-startify'                 " 开始页面
 Plug 'chxuan/tagbar'                           " 显示类/方法/变量
-Plug 'Valloric/YouCompleteMe'                  " 基于语义的自动补全
+Plug 'Valloric/YouCompleteMe'                  " 基于语义的自动补全(这个插件依赖比较多，如果内网安装的话，可以换成Plug 'neoclide/coc.nvim', {'branch': 'release'}，但是coc需要配置)
 Plug 'Yggdroot/LeaderF'                        " 模糊匹配
 Plug 'haya14busa/incsearch.vim'                " 增强?以及/,全部高亮且支持正则
 Plug 'jiangmiao/auto-pairs'                    " 自动补全引号\括号等
