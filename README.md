@@ -4,8 +4,6 @@
 An automatic configuration program for vim
 ===============================================
 
-![main][2]
-
 ## 安装
 
 ### Mac OS X
@@ -14,7 +12,7 @@ An automatic configuration program for vim
  
     /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-#### 安装vimplus
+#### 安装
 
     git clone https://github.com/wuhuaha/niuvim  ~/.niuvim
     cd ~/.niuvim
@@ -24,16 +22,9 @@ An automatic configuration program for vim
 
 为防止vimplus显示乱码，需设置mac终端字体为`Droid Sans Mono Nerd Font`。
 
-#### 更新vimplus
-
-紧跟vimplus的步伐，尝鲜新特性
-
-    ./update.sh
-    
-
 ### Linux 64-bit
 
-#### 安装vimplus
+#### 安装
 
     git clone https://github.com/wuhuaha/niuvim  ~/.niuvim
     cd ~/.niuvim
