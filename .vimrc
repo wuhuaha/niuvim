@@ -105,30 +105,31 @@ command! -nargs=1 -bar UnPlug call s:deregister(<args>)
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " 插件列表
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-call plug#begin('~/.vim/plugged')
+silent! call plug#begin('~/.vim/plugged')
 
-Plug 'chxuan/change-colorscheme'               " 切换主题
-Plug 'chxuan/prepare-code'                     " 新建文件时生成预定义代码段
-Plug 'chxuan/vim-buffer'                       " vim缓存
-Plug 'chxuan/vimplus-startify'                 " 开始页面
-Plug 'chxuan/tagbar'                           " 显示类/方法/变量
-Plug 'Valloric/YouCompleteMe'                  " 基于语义的自动补全(这个插件依赖比较多，如果内网安装的话，可以换成Plug 'neoclide/coc.nvim', {'branch': 'release'}，但是coc需要配置)
-Plug 'Yggdroot/LeaderF'                        " 模糊匹配
-Plug 'haya14busa/incsearch.vim'                " 增强?以及/,全部高亮且支持正则
-Plug 'jiangmiao/auto-pairs'                    " 自动补全引号\括号等
+Plug 'chxuan/change-colorscheme'                " 切换主题
+Plug 'chxuan/prepare-code'                      " 新建文件时生成预定义代码段
+Plug 'chxuan/vim-buffer'                        " vim缓存
+Plug 'chxuan/vimplus-startify'                  " 开始页面
+Plug 'chxuan/tagbar'                            " 显示类/方法/变量
+Plug 'Valloric/YouCompleteMe'                   " 基于语义的自动补全
+" Plug 'neoclide/coc.nvim', {'branch': 'release'} " 功能与YouCompleteMe类似，依赖少一些,内网安装比较方便，但是需要配置
+Plug 'Yggdroot/LeaderF'                         " 模糊匹配
+Plug 'haya14busa/incsearch.vim'                 " 增强?以及/,全部高亮且支持正则
+Plug 'jiangmiao/auto-pairs'                     " 自动补全引号\括号等
 Plug 'scrooloose/nerdtree'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'Xuyuanp/nerdtree-git-plugin'
-Plug 'godlygeek/tabular'                       " 代码、注释、表格等的对齐
-Plug 'tpope/vim-endwise'                       " ifendif等的补全
-Plug 'octol/vim-cpp-enhanced-highlight'        " 高亮C++的关键字和标准库
-Plug 'vim-airline/vim-airline'                 " 状态栏美化
+Plug 'godlygeek/tabular'                        " 代码、注释、表格等的对齐
+Plug 'tpope/vim-endwise'                        " ifendif等的补全
+Plug 'octol/vim-cpp-enhanced-highlight'         " 高亮C++的关键字和标准库
+Plug 'vim-airline/vim-airline'                  " 状态栏美化
 Plug 'vim-airline/vim-airline-themes'
-Plug 'ryanoasis/vim-devicons'                  " 显示文件类型图标
-Plug 'junegunn/vim-slash'                      " 增强搜索体验
-Plug 'junegunn/gv.vim'                         " 显示git提交记录
-Plug 'Shougo/echodoc.vim'                      " 补全函数时在命令栏显示函数签名
-Plug 'vim-scripts/indentpython.vim'            " python缩进
+Plug 'ryanoasis/vim-devicons'                   " 显示文件类型图标
+Plug 'junegunn/vim-slash'                       " 增强搜索体验
+Plug 'junegunn/gv.vim'                          " 显示git提交记录
+Plug 'Shougo/echodoc.vim'                       " 补全函数时在命令栏显示函数签名
+Plug 'vim-scripts/indentpython.vim'             " python缩进
 Plug 'tpope/vim-commentary'
 
 " 加载自定义插件

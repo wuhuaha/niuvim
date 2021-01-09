@@ -339,7 +339,9 @@ function install_prepare_software_on_centos()
         sudo dnf install -y epel-release
         sudo dnf install -y vim ctags automake gcc gcc-c++ kernel-devel make cmake python2 python2-devel python3-devel fontconfig ack git
     else
-        sudo yum install -y ctags automake gcc gcc-c++ kernel-devel cmake python-devel python3-devel fontconfig ack git        compile_vim_on_centos fi
+        sudo yum install -y ctags automake gcc gcc-c++ kernel-devel cmake python-devel python3-devel fontconfig ack git
+        compile_vim_on_centos
+    fi
 }
 
 # 安装fedora必备软件
